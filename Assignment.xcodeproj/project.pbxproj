@@ -10,6 +10,10 @@
 		60AFB625ED3EA9374AD5D986 /* Pods_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4438B0A328EA8128031580 /* Pods_Assignment.framework */; };
 		BA20502E217ADF1600DA1306 /* Optional+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA20502D217ADF1600DA1306 /* Optional+Empty.swift */; };
 		BA205032217AE06100DA1306 /* Observable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205031217AE06100DA1306 /* Observable+Utils.swift */; };
+		BA205034217AE14C00DA1306 /* ColorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205033217AE14C00DA1306 /* ColorError.swift */; };
+		BA205036217AE20400DA1306 /* HexDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205035217AE20400DA1306 /* HexDecoder.swift */; };
+		BA205038217AE3AC00DA1306 /* NSColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205037217AE3AC00DA1306 /* NSColor+Hex.swift */; };
+		BA20503A217AE7AD00DA1306 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205039217AE7AD00DA1306 /* Result.swift */; };
 		BA320AB72179D4DB001503F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA320AB62179D4DB001503F8 /* AppDelegate.swift */; };
 		BA320AB92179D4DB001503F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA320AB82179D4DB001503F8 /* ViewController.swift */; };
 		BA320ABB2179D4DC001503F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA320ABA2179D4DC001503F8 /* Assets.xcassets */; };
@@ -37,6 +41,10 @@
 		7CBBFE7CAEE768AB040CB694 /* Pods-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Assignment/Pods-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		BA20502D217ADF1600DA1306 /* Optional+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Empty.swift"; sourceTree = "<group>"; };
 		BA205031217AE06100DA1306 /* Observable+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Utils.swift"; sourceTree = "<group>"; };
+		BA205033217AE14C00DA1306 /* ColorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorError.swift; sourceTree = "<group>"; };
+		BA205035217AE20400DA1306 /* HexDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexDecoder.swift; sourceTree = "<group>"; };
+		BA205037217AE3AC00DA1306 /* NSColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Hex.swift"; sourceTree = "<group>"; };
+		BA205039217AE7AD00DA1306 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		BA320AB32179D4DB001503F8 /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA320AB62179D4DB001503F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA320AB82179D4DB001503F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,11 +126,15 @@
 				BA320AB82179D4DB001503F8 /* ViewController.swift */,
 				BA320AD42179D676001503F8 /* ViewModel.swift */,
 				BA20502D217ADF1600DA1306 /* Optional+Empty.swift */,
+				BA205033217AE14C00DA1306 /* ColorError.swift */,
+				BA205035217AE20400DA1306 /* HexDecoder.swift */,
 				BA320ABA2179D4DC001503F8 /* Assets.xcassets */,
 				BA320ABC2179D4DC001503F8 /* Main.storyboard */,
 				BA320ABF2179D4DC001503F8 /* Info.plist */,
 				BA320AC02179D4DC001503F8 /* Assignment.entitlements */,
 				BA205031217AE06100DA1306 /* Observable+Utils.swift */,
+				BA205037217AE3AC00DA1306 /* NSColor+Hex.swift */,
+				BA205039217AE7AD00DA1306 /* Result.swift */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -310,8 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA20503A217AE7AD00DA1306 /* Result.swift in Sources */,
+				BA205034217AE14C00DA1306 /* ColorError.swift in Sources */,
+				BA205036217AE20400DA1306 /* HexDecoder.swift in Sources */,
 				BA320AB92179D4DB001503F8 /* ViewController.swift in Sources */,
 				BA320AD52179D676001503F8 /* ViewModel.swift in Sources */,
+				BA205038217AE3AC00DA1306 /* NSColor+Hex.swift in Sources */,
 				BA320AB72179D4DB001503F8 /* AppDelegate.swift in Sources */,
 				BA20502E217ADF1600DA1306 /* Optional+Empty.swift in Sources */,
 				BA205032217AE06100DA1306 /* Observable+Utils.swift in Sources */,

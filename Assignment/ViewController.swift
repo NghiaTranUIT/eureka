@@ -50,7 +50,21 @@ final class ViewController: NSViewController {
         // Error
         output.errorObs
             .observeOn(MainScheduler.instance)
-            .bind(to: errorTextField.rx.isHidden)
+            .subscribe(onNext: {[weak self] (error) in
+                guard let strongSelf = self else { return }
+                let isHidden = error == nil
+                strongSelf.errorTextField.isHidden = isHidden
+                strongSelf.errorTextField.stringValue = "\(String(describing: error))"
+            })
+            .disposed(by: bag)
+
+        // Color
+        output.textColor
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: {[weak self] (color) in
+                guard let strongSelf = self else { return }
+                strongSelf.textField.textColor = color
+            })
             .disposed(by: bag)
     }
 
