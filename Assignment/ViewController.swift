@@ -27,15 +27,20 @@ final class ViewController: NSViewController {
 
     private func binding() {
 
-        let ob = button.rx.tap.asObservable()
+        // Get latest value from TextField when the button is tapped
+        let tapObs = button.rx.tap
+            .asObservable()
             .withLatestFrom(textField.rx.text)
 
-        let input = ViewModel.Input.init(buttonTabObs: ob)
+        // Init the input stream
+        let input = ViewModel.Input(buttonTapObs: tapObs)
 
+        // Then we transform
         let output = viewModel.transform(input)
 
-        // Show
-        output.popupObs.observeOn(MainScheduler.instance)
+        // Show Popup
+        output.popupObs
+            .observeOn(MainScheduler.instance)
             .subscribe(onNext: {[weak self] (text) in
                 guard let strongSelf = self else { return }
                 strongSelf.presentPopUp(text)
@@ -49,14 +54,7 @@ final class ViewController: NSViewController {
             .disposed(by: bag)
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
     private func presentPopUp(_ text: String) {
-        //
         print("Show pop \(text)")
     }
 

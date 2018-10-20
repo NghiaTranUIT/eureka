@@ -17,11 +17,11 @@ protocol ViewModelType {
     func transform(_ input: Input) -> Output
 }
 
+// MARK: - ViewModel
 final class ViewModel: ViewModelType {
 
     struct Input {
-
-        let buttonTabObs: Observable<String?>
+        let buttonTapObs: Observable<String?>
     }
 
     struct Output {
@@ -31,24 +31,21 @@ final class ViewModel: ViewModelType {
 
     func transform(_ input: ViewModel.Input) -> ViewModel.Output {
 
-        let buttonObs = input.buttonTabObs.share()
+        let buttonObs = input.buttonTapObs.share()
 
+        // Error signal
         let errorObs = buttonObs.map { text -> Bool in
-            guard let text = text, !text.isEmpty else {
-                return false
-            }
+            guard !text.isEmpty else { return false }
             return true
-
         }
 
-        let textObs = buttonObs.flatMap { (text) -> Observable<String> in
-            guard let text = text, !text.isEmpty else {
-                return .empty()
+        // Text Signal
+        let textObs = buttonObs
+            .ignoreNil()
+            .flatMap { (text) -> Observable<String> in
+                guard !text.isEmpty else { return .empty() }
+                return .just(text)
             }
-
-            return .just(text)
-
-        }
 
         return Output(popupObs: textObs, errorObs: errorObs)
     }
