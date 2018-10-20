@@ -14,6 +14,7 @@
 		BA205036217AE20400DA1306 /* HexDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205035217AE20400DA1306 /* HexDecoder.swift */; };
 		BA205038217AE3AC00DA1306 /* NSColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205037217AE3AC00DA1306 /* NSColor+Hex.swift */; };
 		BA20503A217AE7AD00DA1306 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA205039217AE7AD00DA1306 /* Result.swift */; };
+		BA20503D217AED5300DA1306 /* RegularExpression+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA20503C217AED5300DA1306 /* RegularExpression+Utils.swift */; };
 		BA320AB72179D4DB001503F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA320AB62179D4DB001503F8 /* AppDelegate.swift */; };
 		BA320AB92179D4DB001503F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA320AB82179D4DB001503F8 /* ViewController.swift */; };
 		BA320ABB2179D4DC001503F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA320ABA2179D4DC001503F8 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		BA205035217AE20400DA1306 /* HexDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexDecoder.swift; sourceTree = "<group>"; };
 		BA205037217AE3AC00DA1306 /* NSColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Hex.swift"; sourceTree = "<group>"; };
 		BA205039217AE7AD00DA1306 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		BA20503C217AED5300DA1306 /* RegularExpression+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegularExpression+Utils.swift"; sourceTree = "<group>"; };
 		BA320AB32179D4DB001503F8 /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA320AB62179D4DB001503F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA320AB82179D4DB001503F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				BA205031217AE06100DA1306 /* Observable+Utils.swift */,
 				BA205037217AE3AC00DA1306 /* NSColor+Hex.swift */,
 				BA205039217AE7AD00DA1306 /* Result.swift */,
+				BA20503C217AED5300DA1306 /* RegularExpression+Utils.swift */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				BA205034217AE14C00DA1306 /* ColorError.swift in Sources */,
 				BA205036217AE20400DA1306 /* HexDecoder.swift in Sources */,
 				BA320AB92179D4DB001503F8 /* ViewController.swift in Sources */,
+				BA20503D217AED5300DA1306 /* RegularExpression+Utils.swift in Sources */,
 				BA320AD52179D676001503F8 /* ViewModel.swift in Sources */,
 				BA205038217AE3AC00DA1306 /* NSColor+Hex.swift in Sources */,
 				BA320AB72179D4DB001503F8 /* AppDelegate.swift in Sources */,
